@@ -1,0 +1,21 @@
+.form{
+    text-align: center;
+    align-items: center;
+}
+
+input[type="file"]{
+    display: none;
+}
+
+button[type="submit"]{
+    background-color: #2D1CC6;
+    border: none;
+    color: white;
+    padding: 18px 100px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+
+
+}
