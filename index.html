@@ -14,39 +14,54 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
 
-    <div class="form">
-        <form>
-  <label for="nome">Nome:</label>
-  <input type="text" id="nome" name="nome" required>
+    <div class="container">
+        <form action="/action_page.php">
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">Nome</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">Sobrenome</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="country">Country</label>
+          </div>
+          <div class="col-75">
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="subject">Subject</label>
+          </div>
+          <div class="col-75">
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          </div>
+        </div>
+        <br>
 
-  <label for="nome2">Sobrenome:</label>
-  <input type="text" id="nome2" nome="nome2" required><br><br>
-   
-  <label for="data">Data da ausência:</label>
-  <input type="date" id="data" name="data" required><br><br> 
-
-  <div id="op" class="form-input-wide" data-layout="half">
-    <label for="op1">Motivo da ausência:</label>
-     <select class="form-dropdown"
-    id="input_55" name="q55_justificativa2a" style="width:310px" data-component="dropdown"
-    aria-label="Justificativa 2a Batida">
-    <option value="">Selecione </option>
-    <option value="Ajuste no banco de horas">Ajuste no banco de horas</option>
-    <option value="Atestado">Atestado</option>
-    <option value="Consulta Médica">Consulta Médica</option>
-    <option value="Day Off">Day Off</option>
-    <option value="Demonstração">Demonstração</option>
-    <option value="Esquecimento">Esquecimento</option>
-    <option value="Problemas com Relógio de Ponto">Problemas com Relógio de Ponto</option>
-</select> </div><br><br>
-  
-
-
+<div class="search">
   <label for="files">Selecionar arquivos</label>
   <input type="file" id="files" name="files" multiple><br><br><br>
-
+</div>
   
+<div class="send">
   <button type="submit">Enviar ausência</button>
+</div>
 </form>
 
 
