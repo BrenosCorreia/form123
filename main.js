@@ -1,4 +1,5 @@
-function alert(){
-    Swal.fire('Sucesso','Justificativa enviada', 'success')
-  }
-  alert();
+function alert() {
+  
+  Swal.fire('Sucesso', 'Justificativa enviada', 'success')
+}
+alert();
